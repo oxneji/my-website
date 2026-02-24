@@ -148,7 +148,7 @@
         "slug": "Ysanto",
         "background": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/Background/6B3D20D1-83B3-45CF-BCA6-E2EA20132535.gif",
         "bio": "Master ko si neji",
-        "music": "https://fkyekmldifravkrickfa.supabase.co/storage/v1/object/public/BackgroundMusic/Sean%20Kingston%20-%20Beat%20It%20(Audio)%20ft.%20Chris%20Brown,%20Wiz%20Khalifa%20(1).mp3",
+        "music": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/BackgroundMusic/Ty%20Dolla%20$ign%20-%20DON'T%20KILL%20THE%20PARTY%20(Lyrics)%20ft.%20Quavo.mp3",
         "socials": {
             "twitch": "",
             "spotify": "",
@@ -161,4 +161,5 @@
             "cover": "https://i.scdn.co/image/ab67616d00001e02712be553f73989a1b7607674"
         }
     }
+
 ]
