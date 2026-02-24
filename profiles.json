@@ -160,7 +160,25 @@
             "artist": "Ty Dolla $ign ft. Quavo & Juicy J",
             "cover": "https://i.scdn.co/image/ab67616d00001e02712be553f73989a1b7607674"
         }
+    },
+    {
+        "id": "1190543176285569064",
+        "slug": "𝑬𝑪𝑨 ♡",
+        "background": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/Background/6B3D20D1-83B3-45CF-BCA6-E2EA20132535.gif",
+        "bio": "Master ko si neji",
+        "music": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/BackgroundMusic/Ty%20Dolla%20$ign%20-%20DON'T%20KILL%20THE%20PARTY%20(Lyrics)%20ft.%20Quavo.mp3",
+        "socials": {
+            "twitch": "",
+            "spotify": "",
+            "youtube": "",
+            "instagram": ""
+        },
+        "musicMeta": {
+            "title": "DON'T KILL THE PARTY",
+            "artist": "Ty Dolla $ign ft. Quavo & Juicy J",
+            "cover": "https://i.scdn.co/image/ab67616d00001e02712be553f73989a1b7607674"
+        }
     }
-
 ]
+
 
