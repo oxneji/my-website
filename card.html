@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neji?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <div id="enter" class="enter-screen">
+    <div class="enter-box">
+      <div class="enter-title">Click to Enter</div>
+      <div class="enter-sub">tap anywhere</div>
+    </div>
+  </div>
+
+  <div id="bg-container" class="bg-container"></div>
+  <div class="overlay"></div>
+
+  <div id="main" class="card hidden">
+    <div class="avatar-wrapper">
+      <img id="discordAvatar" class="avatar" alt="Discord Avatar" />
+      <div id="statusDot" class="status-dot status-offline"></div>
+      <img src="" id="avatarDecoration" class="decoration" alt="" aria-hidden="true" style="display: none;" />
+    </div>
+
+    <h1 class="name">
+      <span id="discordName" class="discord-name">Loading...</span>
+      <span class="name-badge" aria-hidden="true">☆</span>
+    </h1>
+
+    <p class="bio" id="bioText">A DEATH NO ONE GRIEVED</p>
+
+    <div id="lanyardStatus" class="lanyard-status" style="display: none;">
+      <!-- Lanyard info injected here -->
+    </div>
+
+    <div class="icon-row">
+      <a class="icon glow" href="https://www.twitch.tv/nejimalonzo"><img src="icons/twitch.svg"></a>
+      <a class="icon glow" href="https://open.spotify.com/user/22zg2uskvn3gr7l52wv62yyra?si=f732454385c643e1"><img
+          src="icons/spotify.svg"></a>
+      <a class="icon glow" href="https://www.youtube.com/@Nejiperogoodside"><img src="icons/youtube.svg"></a>
+      <a class="icon glow" href="https://www.instagram.com/aintjii/"><img src="icons/instagram.svg"></a>
+    </div>
+
+    <div class="views">👁 <span id="viewsCount">0</span></div>
+  </div>
+
+  <!-- Music Player -->
+  <div class="music-player modern" id="musicPlayer">
+    <div class="mp-top">
+      <div class="mp-cover"></div>
+
+      <div class="mp-meta">
+        <div class="mp-title" id="mpTitle">What You Saying</div>
+        <div class="mp-artist" id="mpArtist">Lil Uzi Vert - </div>
+      </div>
+
+      <button class="mp-menu" title="Menu">≡</button>
+    </div>
+
+    <div class="mp-progress">
+      <div class="mp-progress-bar" id="mpProgressBar"></div>
+    </div>
+
+    <div class="mp-controls">
+      <button class="mp-btn" id="mpPrev" title="Prev">⏮</button>
+      <button class="mp-btn mp-play" id="mpPlay" title="Play/Pause">▶</button>
+      <button class="mp-btn" id="mpNext" title="Next">⏭</button>
+
+      <div class="mp-volume">
+        <span class="mp-vol-icon">🔊</span>
+        <input id="mpVolume" type="range" min="0" max="1" step="0.01" value="0.35" />
+      </div>
+    </div>
+  </div>
+
+  <audio id="bgAudio" preload="auto" loop>
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ✅ script MUST be last -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

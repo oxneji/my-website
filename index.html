@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>monoblock</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img id="bg-video"
+        src="https://www.furnituremanila.com.ph/wp-content/uploads/2019/08/502-Revolving-Mirror-with-Hanger-2.png"
+        alt="background">
+    <div class="overlay-vignette"></div>
+
+    <div class="cursor-dot" id="cursor-dot"></div>
+
+    <div class="container">
+        <header>
+            <h1>𝙈𝙉𝘽𝙇𝘾𝙆</h1>
+            <p style="font-size: 0.8em; color: rgba(255,255,255,0.7); margin-top: 4px;">𝖇𝖞 𝖓𝖊𝖏𝖎, 𝖉𝖆𝖇𝖘 𝖆𝖓𝖉 𝖘𝖎𝖈𝖆</p>
+        </header>
+
+        <div id="profiles">
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <div class="music-player modern" id="musicPlayer">
+        <button id="mainPlayBtn" style="border-radius: 50%; padding: 0; width: 32px; height: 32px;">▶</button>
+        <div class="mp-volume-container" style="display: flex; align-items: center; gap: 8px;">
+            <input type="range" id="mainVolume" min="0" max="1" step="0.01" value="0.5"
+                style="width: 60px; accent-color: white; height: 2px; cursor: none !important;">
+        </div>
+    </div>
+    <audio id="mainAudio" loop
+        src="https://fkyekmldifravkrickfa.supabase.co/storage/v1/object/public/BackgroundMusic/rxv.MP3"></audio>
+
+    <style>
+        * {
+            cursor: none !important;
+        }
+
+        .music-player.modern {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 8px 12px;
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 1000;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Disable highlight selection color */
+        ::selection {
+            background: transparent;
+            color: inherit;
+        }
+    </style>
+
+    <script>
+        // Disable Right Click
+        document.addEventListener('contextmenu', (e) => e.preventDefault());
+        const cursorDot = document.getElementById('cursor-dot');
+        let mouseX = 0, mouseY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            cursorDot.style.left = mouseX + 'px';
+            cursorDot.style.top = mouseY + 'px';
+
+            createParticle(mouseX, mouseY);
+        });
+
+        function createParticle(x, y) {
+            const p = document.createElement('div');
+            p.className = 'particle';
+            const size = Math.random() * 3 + 1;
+            p.style.width = size + 'px';
+            p.style.height = size + 'px';
+            p.style.left = x + 'px';
+            p.style.top = y + 'px';
+            document.body.appendChild(p);
+
+            p.animate([
+                { transform: 'translate(0, 0) scale(1)', opacity: 0.5 },
+                { transform: `translate(${(Math.random() - 0.5) * 40}px, ${(Math.random() - 0.5) * 40}px) scale(0)`, opacity: 0 }
+            ], {
+                duration: 800 + Math.random() * 400,
+                easing: 'cubic-bezier(0, .5, .5, 1)'
+            }).onfinish = () => p.remove();
+        }
+
+        const mainPlayBtn = document.getElementById('mainPlayBtn');
+        const mainAudio = document.getElementById('mainAudio');
+        const mainVolume = document.getElementById('mainVolume');
+
+        mainPlayBtn.addEventListener('click', () => {
+            if (mainAudio.paused) {
+                mainAudio.play();
+                mainPlayBtn.textContent = '⏸';
+            } else {
+                mainAudio.pause();
+                mainPlayBtn.textContent = '▶';
+            }
+        });
+
+        mainVolume.addEventListener('input', (e) => {
+            mainAudio.volume = e.target.value;
+        });
+
+        mainAudio.volume = mainVolume.value;
+
+        async function fetchLanyard(userId) {
+            try {
+                const res = await fetch(`https://api.lanyard.rest/v1/users/${userId}`);
+                const data = await res.json();
+                return data.data;
+            } catch (err) {
+                return null;
+            }
+        }
+
+        async function fetchProfiles() {
+            try {
+                const res = await fetch('/api/profiles');
+                const profiles = await res.json();
+                const container = document.getElementById('profiles');
+
+                if (profiles.length === 0) {
+                    container.innerHTML = '<p style="text-align: center; width: 100%; color: rgba(255,255,255,0.4);">No records found.</p>';
+                    return;
+                }
+
+                const profileDetails = await Promise.all(profiles.map(async p => {
+                    const lanyard = await fetchLanyard(p.id);
+                    return { ...p, lanyard };
+                }));
+
+                container.innerHTML = profileDetails.map(p => {
+                    const l = p.lanyard;
+                    const status = l?.discord_status || 'offline';
+                    const decorationHtml = p.decoration ? `<img src="${p.decoration}" class="decoration">` : '';
+
+                    return `
+                    <a href="/${p.slug || p.id}" class="profile-link">
+                        <div class="profile-card">
+                            <div class="avatar-container">
+                                <img src="${p.avatar || 'https://cdn.discordapp.com/embed/avatars/0.png'}" class="avatar-img">
+                                ${decorationHtml}
+                                <div class="status-dot status-${status}"></div>
+                            </div>
+                            <h3 class="profile-name">${p.username || 'Unknown User'}</h3>
+                            <div class="view-btn">URATEX</div>
+                        </div>
+                    </a>
+                    `;
+                }).join('');
+            } catch (err) {
+                console.error("Failed to load profiles:", err);
+            }
+        }
+        fetchProfiles();
+    </script>
+</body>
+
+</html>
