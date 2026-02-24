@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "functions": {
+        "server.js": {
+            "runtime": "@vercel/node",
+            "memory": 1024,
+            "maxDuration": 10
+        }
+    },
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/server.js"
+        }
+    ]
+}
