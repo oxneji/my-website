@@ -80,7 +80,7 @@
         "socials": {
             "twitch": "",
             "spotify": "",
-            "youtube": "",
+            "youtube": "https://www.youtube.com/@dxbsdwggydwg",
             "instagram": "https://instagram.com/hoooulol_"
         },
         "musicMeta": {
@@ -163,3 +163,4 @@
     }
 
 ]
+
