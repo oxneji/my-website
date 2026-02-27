@@ -196,8 +196,27 @@
             "artist": "Miguel",
             "cover": "https://i.scdn.co/image/ab67616d00001e02d5a8395b0d80b8c48a5d851c"
         }
+    },
+    {
+        "id": "845174331977760780",
+        "slug": "mico",
+        "background": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/Background/74cf88cf66149ad448dcb1e25cb22384.png",
+        "bio": "sino ba to",
+        "music": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/BackgroundMusic/Lil%20Uzi%20Vert%20-%20Homecoming%20.mp3",
+        "socials": {
+            "twitch": "",
+            "spotify": "",
+            "youtube": "https://www.youtube.com/@Mico7k",
+            "instagram": ""
+        },
+        "musicMeta": {
+            "title": "Homecoming",
+            "artist": "Lil Uzi Vert ",
+            "cover": "https://i.scdn.co/image/ab67616d00001e025267529d83ab73cf102fcbbd"
+        }
     }
 ]
+
 
 
 
