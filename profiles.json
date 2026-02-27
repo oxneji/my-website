@@ -202,7 +202,7 @@
         "slug": "mico",
         "background": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/Background/74cf88cf66149ad448dcb1e25cb22384.png",
         "bio": "sino ba to",
-        "music": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/BackgroundMusic/Lil%20Uzi%20Vert%20-%20Homecoming%20.mp3",
+        "music": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/BackgroundMusic/Lil%20Uzi%20Vert%20b%20Homecoming%20.mp3",
         "socials": {
             "twitch": "",
             "spotify": "",
@@ -216,6 +216,7 @@
         }
     }
 ]
+
 
 
 
