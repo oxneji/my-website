@@ -214,8 +214,27 @@
             "artist": "Lil Uzi Vert ",
             "cover": "https://i.scdn.co/image/ab67616d00001e025267529d83ab73cf102fcbbd"
         }
+    },
+    {
+        "id": "845174331977760780",
+        "slug": "Eli",
+        "background": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/Background/Touch%20of%20pink.gif",
+        "bio": "lakas ni Neji!!!",
+        "music": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/BackgroundMusic/Taylor%20Swift%20-%20Lover.mp3",
+        "socials": {
+            "twitch": "",
+            "spotify": "",
+            "youtube": "",
+            "instagram": ""
+        },
+        "musicMeta": {
+            "title": "Lover",
+            "artist": "Taylor Swift ",
+            "cover": "https://i.scdn.co/image/ab67616d00001e02e787cffec20aa2a396a61647"
+        }
     }
 ]
+
 
 
 
