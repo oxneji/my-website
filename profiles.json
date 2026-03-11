@@ -4,7 +4,7 @@
         "slug": "neji",
         "background": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/Background/download%20(6).gif",
         "bio": "fav nakshit - yvette",
-        "music": "https://fkyekmldifravkrickfa.supabase.co/storage/v1/object/public/BackgroundMusic/music%20(1).mp3",
+        "music": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/BackgroundMusic/Tory%20Lanez%20-%20Wish%20I%20Never%20Met%20You%20(prison%20tapes)%20%20Lyrics.mp3",
         "socials": {
             "twitch": "https://www.twitch.tv/nejimalonzo",
             "spotify": "https://open.spotify.com/user/22zg2uskvn3gr7l52wv62yyra?si=f732454385c643e1",
@@ -12,9 +12,9 @@
             "instagram": "https://www.instagram.com/aintjii/"
         },
         "musicMeta": {
-            "title": "What You Saying",
-            "artist": "Lil Uzi Vert",
-            "cover": "https://i.scdn.co/image/ab67616d0000b27338b6341d4c2a56836a650165"
+            "title": "Wish I Never Met You",
+            "artist": "Tory Lanez",
+            "cover": "https://i.scdn.co/image/ab67616d00001e02a0d99927dabb2a8fc5014760"
         }
     },
         {
@@ -234,6 +234,7 @@
         }
     }
 ]
+
 
 
 
