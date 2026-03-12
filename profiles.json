@@ -214,8 +214,27 @@
             "artist": "Taylor Swift ",
             "cover": "https://i.scdn.co/image/ab67616d00001e02e787cffec20aa2a396a61647"
         }
+    },
+    {
+        "id": "1035867327742361661",
+        "slug": "Komi",
+        "background": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/Background/IMG_9008.gif",
+        "bio": "EWAN KO BA ANO ILALAGAY KO D2",
+        "music": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/BackgroundMusic/Practice.mp3",
+        "socials": {
+            "twitch": "",
+            "spotify": "https://open.spotify.com/user/94ty6xp11ownukmj6ga2hosp4",
+            "youtube": "https://m.youtube.com/channel/UCbmTLESVhdbo2n4TvHCny8Q",
+            "instagram": ""
+        },
+        "musicMeta": {
+            "title": "praktisdawe",
+            "artist": "si komi",
+            "cover": "https://i.scdn.co/image/ab67616d00001e02e787cffec20aa2a396a61647"
+        }
     }
 ]
+
 
 
 
