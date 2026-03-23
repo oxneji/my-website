@@ -232,6 +232,24 @@
             "artist": "si komi",
             "cover": "https://i.scdn.co/image/ab67616d00001e02e787cffec20aa2a396a61647"
         }
+    },
+    {
+        "id": "976637828958154762",
+        "slug": "Wambs",
+        "background": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/Background/IMG_9008.gif",
+        "bio": "EWAN KO BA ANO ILALAGAY KO D2",
+        "music": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/BackgroundMusic/Practice.mp3",
+        "socials": {
+            "twitch": "",
+            "spotify": "4",
+            "youtube": "",
+            "instagram": ""
+        },
+        "musicMeta": {
+            "title": "praktisdawe",
+            "artist": "aa",
+            "cover": "https://i.scdn.co/image/ab67616d00001e02e787cffec20aa2a396a61647"
+        }
     }
 ]
 
