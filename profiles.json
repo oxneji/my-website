@@ -144,11 +144,11 @@
         }
     },
     {
-        "id": "690952128679641129",
-        "slug": "Ysanto",
-        "background": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/Background/6B3D20D1-83B3-45CF-BCA6-E2EA20132535.gif",
-        "bio": "Master ko si neji",
-        "music": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/BackgroundMusic/Ty%20Dolla%20$ign%20-%20DON'T%20KILL%20THE%20PARTY%20(Lyrics)%20ft.%20Quavo.mp3",
+        "id": "702780101661687840",
+        "slug": "Shui",
+        "background": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/Background/download%20(6).gif",
+        "bio": "tanga na may honor",
+        "music": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/BackgroundMusic/Tory%20Lanez%20-%20Wish%20I%20Never%20Met%20You%20(prison%20tapes)%20%20Lyrics.mp3",
         "socials": {
             "twitch": "",
             "spotify": "",
@@ -248,6 +248,24 @@
         "musicMeta": {
             "title": "praktisdawe",
             "artist": "aa",
+            "cover": "https://i.scdn.co/image/ab67616d00001e02e787cffec20aa2a396a61647"
+        }
+    },
+    {
+        "id": "845174331977760780",
+        "slug": "mico",
+        "background": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/Background/74cf88cf66149ad448dcb1e25cb22384.png",
+        "bio": "TANGANG ANAK NI NEJI",
+        "music": "https://pbxrvnribtlsuoeetzbp.supabase.co/storage/v1/object/public/Nejii/BackgroundMusic/Lil%20Uzi%20Vert%20b%20Homecoming%20.mp3",
+        "socials": {
+            "twitch": "",
+            "spotify": "4",
+            "youtube": "",
+            "instagram": ""
+        },
+        "musicMeta": {
+            "title": "HOME COMING",
+            "artist": "SI UZIVERT",
             "cover": "https://i.scdn.co/image/ab67616d00001e02e787cffec20aa2a396a61647"
         }
     }
